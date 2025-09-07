@@ -30,3 +30,5 @@ Botão de adicionar ao carrinho
 Destaque do preço e descrição do produto
 
 🌍 Deploy
+https://tenis-nike-indol.vercel.app
+
