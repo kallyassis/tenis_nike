@@ -112,6 +112,12 @@ h1{
 
 .tenis {
     width: 100%;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+.tenis:hover{
+    transform: scale3d(1.2,1.2,1 );
 }
 
 .verde{
@@ -134,5 +140,3 @@ h1{
     align-items: center;
     justify-content: center;
 }
-
-
