@@ -142,7 +142,7 @@ h1{
 }
 
 
-@media screen and  (max-width: 480px){
+@media screen  and (max-width: 768px ) {
 
     body{
         position: relative;
@@ -196,7 +196,8 @@ h1{
 
     .imagem-tenis{
         width: 250px;
-        margin-left: 120px;
+        margin-top: 25px;
+        margin-left: 130px;
         transform: rotate(-25deg);
         filter: drop-shadow(15px 35px 40px #161616);
         transition: 1s;
@@ -205,7 +206,7 @@ h1{
     .troca-efeito{
     opacity: 0;
     transform: rotate(-25deg)  translateY(-30px);
-} 
+    } 
 
     body::before{
         content: '';
@@ -234,5 +235,239 @@ h1{
     .btn-adcionar{
         padding: 10px 10px;
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    
+        body{
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            width: 80px;
+            margin-top: 10px;
+        }
+
+        .caixa-principal{
+            display: block;
+            margin: 0;
+            justify-content: space-between;
+            align-items: center;
+            height: 75vh;
+            position: relative;/* para ficar por cima de tudo*/
+            z-index: 1;  /* para ficar por cima de tudo*/
+
+        }
+
+        .caixa-sec{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .caixa-sec p{
+            font-size: 20px ;
+            margin-bottom: 30px;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+
+        .caixa-sec h4 {
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .imagem-tenis{
+            width: 520px;
+            margin-left: 200px;
+            transform: rotate(-25deg);
+            filter: drop-shadow(15px 35px 40px #161616);
+            transition: 1s;
+        }
+
+        .troca-efeito{
+        opacity: 0;
+        transform: rotate(-25deg)  translateY(-30px);
+        } 
+
+
+        .caixa-botoes{
+            padding-left: 200px;
+            gap: 25px;
+        }
+
+        .botoes{
+        width: 120px;
+        height: 120px;
+    }
+
+        body::before{
+            content: '';
+            background-color:#202020;
+            position: absolute;
+            transform: rotate(33deg);
+            top: 0;
+            left: 320px;
+            width: 100%;
+            height: -350%;
+
+        }
+
+        body::after{
+            content: 'NIke';
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            color: black;
+            font-size: 160px;
+            font-weight: bold;
+            transform: rotate(-50%, -50%);
+            opacity: 0.5;
+        }
+
+        .btn-adcionar{
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+    }
+
+    @media screen  and (min-width: 1280px) {
+
+
+    body::before{
+        content: '';
+        background-color:#202020;
+        position: absolute;
+        transform: rotate(-70deg);
+        top: 0;
+        left: -600px;
+        width: 100%;
+        height: 131%;
+    }
+
+    body::after{
+        content: 'NIke';
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        color: black;
+        font-size: 200px;
+        font-weight: bold;
+        transform: rotate(-50%, -50%);
+        opacity: 0.5;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .caixa-principal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75%;
+        position: relative;/* para ficar por cima de tudo*/
+        z-index: 1;  /* para ficar por cima de tudo*/
+    }
+
+    .caixa-sec{
+        width: 400px;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    .caixa-sec h4 {
+        font-size: 30px;
+    }
+
+    .caixa-sec p{
+        font-size:16px ;
+        margin-bottom: 40px;
+    }
+
+    .btn-adcionar{
+        padding: 10px 20px;
+        background-color: #a3be52;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition:  0.5s ;
+    }
+
+    .btn-adcionar:hover {
+        opacity: 0.8;
+    }
+
+    .imagem-tenis{
+        width: 700px;
+        transform: rotate(-25deg);
+        filter: drop-shadow(30px 45px 40px #161616);
+        transition: 1s;
+    }
+
+    .troca-efeito{
+        opacity: 0;
+        transform: rotate(-25deg)  translateY(-30px);
+    } 
+
+    .caixa-botoes{
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        gap: 10px;
+        padding-top: 30px;
+    }
+
+    .botoes{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .botoes:active {  
+        opacity: 0.6;
+    }
+
+    .tenis {
+        width: 100%;
+        transition: transform 0.4s;
+        cursor: pointer;
+    }
+
+    .tenis:hover{
+        transform: scale3d(1.3,1.3,1);
+    }
+
+    .verde{
+        background-color: #ccee66;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .rosa{
+        background-color: #ff9eb5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .azul{
+        background-color: #58cced;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
