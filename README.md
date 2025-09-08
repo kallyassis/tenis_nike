@@ -7,7 +7,7 @@ O objetivo foi praticar estilização moderna e interatividade no front-end.
 
 HTML5 → Estrutura do site
 
-CSS3 → Estilização, responsividade e efeitos visuais
+CSS3 → Estilização e efeitos visuais
 
 JavaScript → Troca de imagens e interatividade
 
